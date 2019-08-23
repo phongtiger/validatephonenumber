@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function checkNumber(str) {
+        let a = /^[(]+\d{2}[)]+[-]+[(]+\d{10}[)]$/;
+        if(a.test(str)){
+            return true;
+        } return false;
+    }
+    let b = '(84)-(0978489649)';
+    console.log(checkNumber(b.trim()));
+</script>
+</html>
